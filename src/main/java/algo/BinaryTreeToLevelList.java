@@ -1,7 +1,9 @@
+package algo;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-class Tree{
+class Tree5{
     class Node{
         int data;
         Node left;
@@ -11,7 +13,7 @@ class Tree{
         }
     }
     Node root;
-    Tree(int size){
+    Tree5(int size){
         root = makeBST(0,size-1);
     }
     Node makeBST(int start,int end){
@@ -70,7 +72,7 @@ class Tree{
 
 public class BinaryTreeToLevelList {
     public static void main(String[] args) {
-        Tree t = new Tree(10);
+        Tree5 t = new Tree5(10);
         t.printList(t.BSTtoList2());
     }
 }
